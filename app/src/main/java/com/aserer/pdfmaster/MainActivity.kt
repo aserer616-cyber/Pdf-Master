@@ -1,4 +1,3 @@
-```kotlin
 package com.aserer.pdfmaster
 
 import android.content.Context
