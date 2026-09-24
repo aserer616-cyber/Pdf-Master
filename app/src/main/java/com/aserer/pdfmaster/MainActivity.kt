@@ -19,6 +19,7 @@ class MainActivity : ComponentActivity() {
  override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanceState); setContent { App(this) } }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable fun App(context: Context) {
  var files by remember { mutableStateOf<List<Uri>>(emptyList()) }
  var status by remember { mutableStateOf("Ready") }
